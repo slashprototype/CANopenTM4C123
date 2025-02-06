@@ -1,3 +1,18 @@
+# Code Composer studio project data
+/Debug/
+/.launches/
+/docs/
+/Doxygen/
+/Release/
+/targetConfigs/
+.tm4c123gh6pm.cmd/
+tm4c123gh6pm_startup_ccs.c
+.cproject
+.ccsproject
+.project
+/.vscode/
+/.settings/
+
 # Prerequisites
 *.d
 
