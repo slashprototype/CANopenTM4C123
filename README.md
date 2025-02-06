@@ -16,15 +16,18 @@
   - Create a CCS project considering the custom board requirements.
   - Clone or download this repository (including submodules) to your workspace.
   - Install TivaWare for C Series and identify installation directory e.g. "C:/ti/TivaWare_C_Series-2.2.0.xxx"
+  - *Exclude to build*:
+    - CANopenNode/example
+    - CANopenNode/storage
+    - Examples/tm4c_utils/examples
+    - main.c (the original main.c created by the project)
   - Realize the next CCS workspace properties configurations:
-   - Include the required paths:
+   - *Include the required paths*:
     - "C:/ti/TivaWare_C_Series-2.2.0.xxx"
-    - Examples/driver/
-    - Examples/src/
-    - tm4c_utils/
+    - Examples/
     - CANopenNode/
     - CANopenNode_TM4C123/
-   - Into Build/Arm Linker/Basic Options:
+   - *Into Build/Arm Linker/Basic Options*:
     - Heap Size for C/C++ dynamic memory allocation = 8000
     - Set C system stack size = 8000
    - Configure your Dialect in order to compile program in C99 (--C99). For CCS is inside Build/Arm Compiler/Advanced Options/Language Options/C Dialect

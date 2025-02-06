@@ -24,7 +24,7 @@
 #include "driverlib/can.h"
 #include "inc/hw_memmap.h"
 
-#include "can_config.h"
+#include "driver/can_config.h"
 #ifdef CO_DRIVER_CUSTOM
 #include "CO_driver_custom.h"
 #endif
